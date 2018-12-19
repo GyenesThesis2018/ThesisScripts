@@ -1,0 +1,12 @@
+#!/bin/bash
+ 
+#PBS -S /bin/bash
+#PBS -l nodes=1:ppn=1,walltime=48:00:00
+#PBS -V
+#PBS -q standard
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+INPUT_NUMBER=$a
+INPUT_NUMBER2=$b
+/usr/local/bin/matlab -nojvm -nosplash -r "ids=$INPUT_NUMBER;j=$INPUT_NUMBER2;run('/home/clustor/ma/b/bg814/hctsa-quiescence/simple_calc_shorttr_N2.m');exit;"

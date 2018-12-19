@@ -1,0 +1,12 @@
+#!/bin/bash
+ 
+#PBS -N subsetting
+#PBS -m e
+#PBS -S /bin/bash
+#PBS -l nodes=1:ppn=1,walltime=48:00:00
+#PBS -V
+#PBS -q standard
+
+cd $PBS_O_WORKDIR
+INPUT_NUMBER=$a
+/usr/local/bin/matlab -nojvm -nosplash -r "j=$INPUT_NUMBER;run('/home/clustor/ma/b/bg814/hctsa-quiescence/init_and_subset_gwas_shorttr.m');exit;"
