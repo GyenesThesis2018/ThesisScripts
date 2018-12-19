@@ -1,0 +1,9 @@
+This repository contains all the scripts used for the thesis 'Natural Diversity of Caenorhabditis elegans Satiety
+Quiescence Behaviour' by the author Bertalan Gyenes. An updated version is forthcoming for our paper that is currently 
+in preparation.
+
+The analysis uses the highly comparative time-series analysis software (https://github.com/benfulcher/hctsa, commit 6526cdb).
+Practically all scripts need to be run in this particular hctsa environment.
+
+The files in the folder 'cluster' were used to parallelise the computation of features for each time series and as such, 
+these were run in an hctsa environment on a cluster.
