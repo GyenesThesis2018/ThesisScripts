@@ -7,3 +7,5 @@ Practically all scripts need to be run in this particular hctsa environment.
 
 The files in the folder 'cluster' were used to parallelise the computation of features for each time series and as such, 
 these were run in an hctsa environment on a cluster.
+
+With any questions, please contact: bg814@lms.mrc.ac.uk.
